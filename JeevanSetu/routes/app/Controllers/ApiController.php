@@ -1,0 +1,1 @@
+<?php class ApiController extends Controller{function pincode(){$pin=preg_replace('/\D/','',$_GET['pin']??'');$db=Database::db();$q=$db->prepare('SELECT city,state FROM pincodes WHERE pincode=? LIMIT 1');$q->execute([$pin]);$r=$q->fetch(PDO::FETCH_ASSOC);$this->json($r?:['city'=>'','state'=>'']);}}

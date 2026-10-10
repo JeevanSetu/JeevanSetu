@@ -1,0 +1,1 @@
+</main><footer><b>Health Setu</b> • Connected Healthcare & Emergency Network</footer><script>window.HEALTHSETU_BASE=<?=json_encode($config['base_url'])?>;</script><script src="<?=$config['base_url']?>/assets/js/app.js"></script></body></html>
